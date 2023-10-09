@@ -1,0 +1,244 @@
+/************************************* NAVEGAÇÃO ******************************************/
+
+nav{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+}
+.logo{
+    width: 64px;
+}
+ul.navbar-nav li.nav-item a.nav-link{
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    position:  relative !important;
+}
+ul.navbar-nav li.nav-item a::after{
+    content: " " !important;
+    width: 0% !important;
+    height: 2px !important;
+    background-color:rgb(255, 255, 255) !important;
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+ul.navbar-nav li.nav-item a:hover::after{
+    width: 100% !important;
+}
+.fa-bars{
+    color: white;
+}
+
+/************************************* SEÇÃO ÚNICA ******************************************/
+
+#sct-unica{
+    padding-top: 130px;
+    padding-bottom: 25px;
+}
+.title-sct{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-bottom: 70px;
+}
+.detalhes h2{
+    color: #000;
+    text-decoration: none;
+}
+.detalhes a{
+    text-decoration: none;
+}
+.detalhes{
+    display: none;
+}
+.foto img{
+    display: block;
+}
+.foto:target{
+    position: fixed;
+    width: 37%;
+    top: 20px;
+    right: 5%;
+    left: 5%;
+    padding: 5px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000;
+    background: white;
+    border-radius: 5px;
+}
+.foto:target .detalhes{
+    display: block;
+    text-align: start;
+}
+
+/***************************** FOOTER **************************/
+
+footer{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+footer h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.direita{
+    text-align: right;
+    margin-top: auto;
+}
+footer a{
+    color: rgb(255, 255, 255);
+    transition: .7s;
+}
+footer a:hover{
+    color: darkgray;
+}
+.fa-instagram{
+    transition: .7s;
+}
+.fa-instagram:hover{
+    color: darkgrey !important;
+}
+.copy{
+    text-align: center;
+}
+.h5-footer{
+    margin-top: 10px;
+}
+footer a{
+    text-decoration: none;
+}
+
+/***************************** MEDIA *************************/
+/* Extra Small divices */
+@media(max-width: 575.98px){
+    .foto:target{
+        position: fixed;
+        width: 90%;
+        top: 100px;
+        right: 10%;
+        padding: 5px;
+        border: solid 1px #333;
+        box-shadow: 0 0 25px 10px #000;
+        background: white;
+        border-radius: 5px;
+    }
+    .rede{
+        font-size: 25px !important;
+        padding: 2px !important;
+    }
+}
+/* Small devices */
+@media(min-width: 576px) and (max-width: 567.98px){
+    .foto:target{
+        position: fixed;
+        width: 100%;
+        top: 20px;
+        right: 5%;
+        left: 5%;
+        padding: 5px;
+        border: solid 1px #333;
+        box-shadow: 0 0 25px 10px #000;
+        background: white;
+        border-radius: 5px;
+    }
+    .rede{
+        font-size: 25px !important;
+        padding: 2px !important;
+    }
+}
+/* Medium devices*/
+@media(min-width: 568px) and (max-width: 991.98px){
+    .foto:target{
+        text-align: center;
+        position: fixed;
+        width: 60%;
+        top: 300px;
+        right: 0;
+        left: 20%;
+        padding: 5px;
+        border: solid 1px #333;
+        box-shadow: 0 0 25px 10px #000;
+        background: white;
+        border-radius: 5px;
+    }
+    div.container div.row div.col-4 i.fa-gear{
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+    }
+    .title-2{
+        font-size: 1.2em;
+    }
+    .title-l{
+        font-size: 0.9em !important;
+    }
+    .rede{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .rede{
+        font-size: 35px !important;
+        padding: 2px !important;
+    }
+    #sct-unica, html, body{
+        height: 95%;
+    }
+}
+/* Large devices */
+@media(min-width: 992px) and (max-width: 1199.98px){
+    .foto:target{
+        position: fixed;
+        width: 50%;
+        top: 30px;
+        right: 5%;
+        left: 25%;
+        padding: 5px;
+        border: solid 1px #333;
+        box-shadow: 0 0 25px 10px #000;
+        background: white;
+        border-radius: 5px;
+    }
+    div.container div.row div.col-4 i.fa-gear{
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+    }
+    .title-2{
+        font-size: 1.2em;
+    }
+    .title-l{
+        font-size: 0.9em !important;
+    }
+    .rede{
+        font-size: 25px !important;
+        padding: 2px !important;
+    }
+}
+/* Extra Large devices */
+@media(min-width: 1200px){
+    .foto:target{
+        position: fixed;
+        width: 37%;
+        top: 40px;
+        right: 5%;
+        left: 32%;
+        padding: 5px;
+        border: solid 1px #333;
+        box-shadow: 0 0 25px 10px #000;
+        background: white;
+        border-radius: 5px;
+    }
+    .title-2{
+        font-size: 1.2em;
+    }
+    .title-l{
+        font-size: 0.9em !important;
+    }
+    .rede{
+        font-size: 25px !important;
+        padding: 2px !important;
+    }
+}

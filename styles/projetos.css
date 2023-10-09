@@ -1,0 +1,200 @@
+/***************************************** NAVEGAÇÃO ************************************************/
+
+
+nav{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+}
+.logo{
+    width: 64px;
+}
+ul.navbar-nav li.nav-item a.nav-link{
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    position:  relative !important;
+}
+ul.navbar-nav li.nav-item a::after{
+    content: " " !important;
+    width: 0% !important;
+    height: 2px !important;
+    background-color:rgb(255, 255, 255) !important;
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+ul.navbar-nav li.nav-item a:hover::after{
+    width: 100% !important;
+}
+.divisor{
+    width: 1px;
+    margin: 12px 15px;
+    background-color: rgb(255, 255, 255);
+}
+.fa-bars{
+    color: white;
+}
+
+
+/***************************************** SEÇÃO 1 **************************************************/
+
+
+#sct-unc{
+    padding-top: 155px;
+    padding-bottom: 15px;
+}
+a{
+    text-decoration: none;
+}
+.inline{
+    display: inline;
+}
+.title-sct{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+}
+.all-view{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: .7s;
+}
+.all-view:hover{
+    color: rgb(58, 55, 55);
+}
+img{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important; 
+}
+.fa-caret-left{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    font-size: 3em;
+    padding: 15px;
+    border-radius: 70px;
+}
+.fa-caret-right{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    font-size: 3em;
+    padding: 15px;
+    border-radius: 70px;
+}
+#article{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+/***************************** FOOTER **************************/
+footer{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+footer h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.direita{
+    text-align: right;
+    margin-top: auto;
+}
+footer a{
+    color: rgb(255, 255, 255);
+    transition: .7s;
+}
+footer a:hover{
+    color: darkgray;
+}
+foote a .fa-instagram{
+    transition: .7s;
+}
+foote a .fa-instagram:hover{
+    color: darkgrey !important;
+}
+.copy{
+    text-align: center;
+}
+.h5-footer{
+    margin-top: 10px;
+}
+
+  
+/***************************** MEDIA *************************/
+/* Extra Small divices */
+@media(max-width: 575.98px){
+    .fa-caret-left{
+        color: rgb(255, 255, 255);
+        background-color: #000;
+        font-size: 1.4em;
+        padding: 15px;
+        border-radius: 70px;
+    }
+    .fa-caret-right{
+        color: rgb(255, 255, 255);
+        background-color: #000;
+        font-size: 1.4em;
+        padding: 15px;
+        border-radius: 70px;
+    }
+    .ingles{
+        height: 84% !important;
+    }
+    .rede{
+        font-size: 1.2em;
+    }
+}
+/* Small devices */
+@media(min-width: 576px) and (max-width: 567.98px){
+    .fa-caret-left{
+        color: rgb(255, 255, 255);
+        background-color: #000;
+        font-size: 1.4em;
+        padding: 15px;
+        border-radius: 70px;
+    }
+    .fa-caret-right{
+        color: rgb(255, 255, 255);
+        background-color: #000;
+        font-size: 1.4em;
+        padding: 15px;
+        border-radius: 70px;
+    }
+    .ingles{
+        height: 90%;
+    }
+    .rede{
+        font-size: 1.2em;
+    }
+}
+/* Medium devices*/
+@media(min-width: 568px) and (max-width: 991.98px){
+    .ingles{
+        height: 92% !important;
+    }
+    .rede{
+        font-size: 1.7em;
+    }
+}
+/* Large devices */
+@media(min-width: 992px) and (max-width: 1199.98px){
+    .rede{
+        font-size: 1.7em;
+    }
+}
+/* Extra Large devices */
+@media(min-width: 1200px){
+    .rede{
+        font-size: 1.7em !important;
+        padding: 5px;
+    }
+}

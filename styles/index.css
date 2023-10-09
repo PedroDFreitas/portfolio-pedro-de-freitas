@@ -1,0 +1,422 @@
+/******************************* NAVEGAÇÃO **************************/
+nav{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+}
+.logo{
+    width: 64px;
+}
+ul.navbar-nav li.nav-item a.nav-link{
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    position:  relative !important;
+}
+ul.navbar-nav li.nav-item a::after{
+    content: " " !important;
+    width: 0% !important;
+    height: 2px !important;
+    background-color:rgb(255, 255, 255) !important;
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+ul.navbar-nav li.nav-item a:hover::after{
+    width: 100% !important;
+}
+.divisor{
+    width: 1px;
+    margin: 12px 15px;
+    background-color: rgb(255, 255, 255);
+}
+/***************************** SEÇÃO 1 *******************************/
+#secao-1, body, html{
+    height: 100%;
+}
+#secao-1{
+    background-color: beige;
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+.digitando::after{
+    content: '|';
+    opacity: 1;
+    animation: pisca .5s infinite;
+}
+@keyframes inicializar{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, -60px, 0);
+    }
+}
+@keyframes pisca{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.minha-foto-1{
+    width: 120px;
+    border: 7px solid #1d1c1c;
+    border-radius: 15px;
+}
+.fa-bars{
+    color: rgb(255, 255, 255);
+}
+.imagem{
+    text-align: center;
+}
+.botao{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px solid rgb(85, 84, 84);
+    border-radius: 10px;
+    transition: .5s;
+}
+.botao:hover{
+    color: beige;
+    border-color: rgb(43, 43, 43);
+    background-color: #000;
+}
+.imagem-img{
+    width: 60%;
+    border: 7px solid rgb(202, 202, 184);
+    border-radius: 160px;
+    background-image: url(../backgrounds/birmingham-museums-trust--IAS_N85adA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: mover 2.5s infinite ease-in-out;
+    margin-bottom: 20%;
+}
+@keyframes mover {
+    50%{
+        transform: translateX(-10%);
+    }
+}
+h1.digitando{
+    margin-bottom: 10%;
+}
+/***************************** SEÇÃO 2 *************************/
+#secao-2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(252, 252, 220);
+}
+.titulo{
+    text-align: center;
+}
+.title-sct{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+}
+.square{
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 30%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+div.container div.row div.col-4 i.fa-instagram{
+    color: rgb(255, 255, 255);
+    font-size: 550%;
+}
+.link-title{
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+.link-title:hover{
+    color: rgb(66, 65, 65);
+}
+.pf{
+    width: 84.5%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.img-logo{
+    text-align: center;
+    font-size: 1.4em !important;
+}
+div.container div.row div.col-4 i.fa-gear{
+    color: rgb(255, 255, 255);
+    font-size: 550%;
+}
+/***************************** SEÇÃO 3 *************************/
+#secao-3{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+a{
+    text-decoration: none;
+}
+.fa-caret-left{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    font-size: 3em;
+    padding: 15px;
+    border-radius: 70px;
+}
+.fa-caret-right{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    font-size: 3em;
+    padding: 15px;
+    border-radius: 70px;
+}
+/***************************** SEÇÃO 4 *************************/
+#secao-4{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+/***************************** FOOTER **************************/
+footer{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+footer h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.direita{
+    text-align: right;
+    margin-top: auto;
+}
+footer a{
+    color: rgb(255, 255, 255);
+    transition: .7s;
+}
+footer a:hover{
+    color: darkgray;
+}
+.fa-instagram{
+    transition: .7s;
+}
+.fa-instagram:hover{
+    color: darkgrey !important;
+}
+.copy{
+    text-align: center;
+}
+.h5-footer{
+    margin-top: 10px;
+}
+/***************************** MEDIA *************************/
+/* Extra Small divices */
+@media(max-width: 575.98px){
+    #secao-1{
+        background-color: beige;
+        padding-top: 40%;
+        text-align: center;
+    }
+    h1.digitando{
+        padding-bottom: 10%;
+    }
+    .lado-1{
+        padding-bottom: 30%;
+    }
+    #secao-1, body, html{
+        height: 100%;
+    }
+    #secao-2{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    div.container div.row div.col-4 i.fa-instagram{
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+    }
+    .img-logo{
+        text-align: center;
+    }
+    .pf{
+        width: 100%;
+        border-radius: 15px;
+    }
+    div.container div.row div.col-4 i.fa-gear{
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+    }
+    .fa-caret-left{
+        color: rgb(255, 255, 255);
+        background-color: #000;
+        font-size: 1.4em;
+        padding: 15px;
+        border-radius: 70px;
+    }
+    .fa-caret-right{
+        color: rgb(255, 255, 255);
+        background-color: #000;
+        font-size: 1.4em;
+        padding: 15px;
+        border-radius: 70px;
+    }
+    .rede{
+        font-size: 25px !important;
+        padding: 2px !important;
+    }
+}
+/* Small devices */
+@media(min-width: 576px) and (max-width: 567.98px){
+    #secao-1{
+        background-color: beige;
+        padding-top: 50%;
+        text-align: center;
+    }
+    h1.digitando{
+        padding-bottom: 10%;
+    }
+    #secao-1, body, html{
+        height: 100%;
+        padding-bottom: 10%;
+    }
+    #secao-2{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .pf{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .img-logo{
+        text-align: center;
+    }
+    div.container div.row div.col-4 i.fa-instagram{
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+    }
+    .img-logo{
+        text-align: center;
+    }
+    .pf{
+        width: 80%;
+        border-radius: 15px;
+    }
+    div.container div.row div.col-4 i.fa-gear{
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+    }
+    .fa-caret-left{
+        color: rgb(255, 255, 255);
+        background-color: #000;
+        font-size: 1.4em;
+        padding: 15px;
+        border-radius: 70px;
+    }
+    .fa-caret-right{
+        color: rgb(255, 255, 255);
+        background-color: #000;
+        font-size: 1.4em;
+        padding: 15px;
+        border-radius: 70px;
+    }
+    .rede{
+        font-size: 25px !important;
+        padding: 2px !important;
+    }
+}
+/* Medium devices*/
+@media(min-width: 568px) and (max-width: 991.98px){
+    #secao-1{
+        background-color: beige;
+        padding-top: 30%;
+    }
+    #secao-1, body, html{
+        height: 85%;
+    }
+    h1.digitando{
+        padding-bottom: 10px;
+    }
+    div.container div.row div.col-4 i.fa-instagram{
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+    }
+    .img-logo{
+        text-align: center;
+    }
+    .pf{
+        width: 80%;
+        border-radius: 15px;
+    }
+    div.container div.row div.col-4 i.fa-gear{
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+    }
+    .title-2{
+        font-size: 1.2em;
+    }
+    .title-l{
+        font-size: 0.9em !important;
+    }
+    .rede{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .rede{
+        font-size: 35px !important;
+        padding: 2px !important;
+    }
+}
+/* Large devices */
+@media(min-width: 992px) and (max-width: 1199.98px){
+    div.container div.row div.col-4 i.fa-instagram{
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+    }
+    .img-logo{
+        text-align: center;
+    }
+    .pf{
+        width: 74.5%;
+        border-radius: 15px;
+    }
+    div.container div.row div.col-4 i.fa-gear{
+        color: rgb(255, 255, 255);
+        font-size: 240%;
+    }
+    .title-2{
+        font-size: 1.2em;
+    }
+    .title-l{
+        font-size: 0.9em !important;
+    }
+    .rede{
+        font-size: 25px !important;
+        padding: 2px !important;
+    }
+}
+/* Extra Large devices */
+@media(min-width: 1200px){
+    .title-2{
+        font-size: 1.2em;
+    }
+    .title-l{
+        font-size: 0.9em !important;
+    }
+    .rede{
+        font-size: 25px !important;
+        padding: 2px !important;
+    }
+}
